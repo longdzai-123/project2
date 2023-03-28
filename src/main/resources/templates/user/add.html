@@ -1,0 +1,26 @@
+<form th:action="@{/user/new}" method="post" enctype="multipart/form-data">
+   <div>
+       <input type="text" name="name" placeholder="Enter name...">
+   </div>
+   <div>
+       <input type="text" name="birthdate" placeholder="dd/MM/yyyy...">
+   </div>
+   <div>
+       <input type="file" name="file" accept="image/*">
+   </div>
+   <div>
+       <input type="text" name="username" placeholder="Enter username...">
+   </div>
+   <div>
+       <input type="text" name="password" placeholder="Enter password...">
+   </div>
+   <div>
+       <input type="checkbox" name="userRoleDTOs[0].role" value="ROLE_ADMIN" >ROLE_ADMIN
+   </div>
+   <div>
+       <input type="checkbox" name="userRoleDTOs[1].role" value="ROLE_STUDENT" >ROLE_STUDENT
+   </div>
+   <div>
+   		<button type="submit">Create</button>
+   </div>
+</form>
